@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-*************" crossorigin="anonymous" />
+    <title>Netflix-Home</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+</head>
+<body>
+    <nav id="navbar" class="nav">
+        <div class="logo a">
+            <a href="index.html"><img src="logo.png" alt="Logo"></a>
+        </div>
+        <div class="dropdown-toggle">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle a">
+            <label for="menu-toggle a" class="menu-icon">Browser</label>
+            <ul class="navbar a">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="tv-shows.html">TV Shows</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="my-list.html">My List</a></li>
+                <li><a href="new&popular.html">New & Popular</a></li>
+            </ul>
+        </div>
+        <div class="icons a">
+            <div class="search-icon" onclick="toggleSearch()" onfocus="showSearchForm()">
+                
+                <i class="fa fa-search"></i>
+            </div>
+            <form class="search-form" id="searchForm">
+                <input type="text" placeholder="Search..." onblur="hideSearchForm()">
+            </form>
+            <div class="notification">
+                
+                <i class="fa fa-bell"></i>
+            </div>
+            <div class="profile">
+                
+                <img src="profile.png" alt="" onclick='toggleProfileMenu()'>
+                <ul class="profile-menu" id="profileMenu">
+                    <li><a href="#">Profile 1</a></li>
+                    <li><a href="#">Profile 2</a></li>
+                    <li><a href="#">Profile 3</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="featured-image">
+        <img src="large_image.jpg" alt="Large Image">
+        <div class="overlay">
+            <div class="content">
+                <h2>Demon Slayer</h2>
+                <div class="buttons">
+                    <button class="play-button" >Play</button>
+                    <button class="info-button">More Info</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2>Recently Added</h2>
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Add your movie slides here -->
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h3 class="movie-name">Movie 1</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h3 class="movie-name">Movie 2</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 3">
+                <h3 class="movie-name">Movie 3</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 4">
+                <h3 class="movie-name">Movie 4</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 5">
+                <h3 class="movie-name">Movie 5</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 6">
+                <h3 class="movie-name">Movie 6</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 7">
+                <h3 class="movie-name">Movie 7</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 8">
+                <h3 class="movie-name">Movie 8</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 9">
+                <h3 class="movie-name">Movie 9</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 10">
+                <h3 class="movie-name">Movie 10</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 11">
+                <h3 class="movie-name">Movie 11</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 12">
+                <h3 class="movie-name">Movie 12</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 13">
+                <h3 class="movie-name">Movie 13</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 14">
+                <h3 class="movie-name">Movie 14</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 15">
+                <h3 class="movie-name">Movie 15</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 16">
+                <h3 class="movie-name">Movie 16</h3>
+            </div>
+            <!-- Add more movie slides as needed -->
+        </div>
+    </div> 
+    <h2>Trending Now</h2>
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Add your movie slides here -->
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h3 class="movie-name">Movie 1</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h3 class="movie-name">Movie 2</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 3">
+                <h3 class="movie-name">Movie 3</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 4">
+                <h3 class="movie-name">Movie 4</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 5">
+                <h3 class="movie-name">Movie 5</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 6">
+                <h3 class="movie-name">Movie 6</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 7">
+                <h3 class="movie-name">Movie 7</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 8">
+                <h3 class="movie-name">Movie 8</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 9">
+                <h3 class="movie-name">Movie 9</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 10">
+                <h3 class="movie-name">Movie 10</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 11">
+                <h3 class="movie-name">Movie 11</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 12">
+                <h3 class="movie-name">Movie 12</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 13">
+                <h3 class="movie-name">Movie 13</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 14">
+                <h3 class="movie-name">Movie 14</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 15">
+                <h3 class="movie-name">Movie 15</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 16">
+                <h3 class="movie-name">Movie 16</h3>
+            </div>
+            <!-- Add more movie slides as needed -->
+        </div>
+    </div> 
+    <h2>Anime</h2>
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Add your movie slides here -->
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h3 class="movie-name">Movie 1</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h3 class="movie-name">Movie 2</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 3">
+                <h3 class="movie-name">Movie 3</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 4">
+                <h3 class="movie-name">Movie 4</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 5">
+                <h3 class="movie-name">Movie 5</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 6">
+                <h3 class="movie-name">Movie 6</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 7">
+                <h3 class="movie-name">Movie 7</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 8">
+                <h3 class="movie-name">Movie 8</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 9">
+                <h3 class="movie-name">Movie 9</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 10">
+                <h3 class="movie-name">Movie 10</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 11">
+                <h3 class="movie-name">Movie 11</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 12">
+                <h3 class="movie-name">Movie 12</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 13">
+                <h3 class="movie-name">Movie 13</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 14">
+                <h3 class="movie-name">Movie 14</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 15">
+                <h3 class="movie-name">Movie 15</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 16">
+                <h3 class="movie-name">Movie 16</h3>
+            </div>
+            <!-- Add more movie slides as needed -->
+        </div>
+    </div>
+    <h2>Action Movies</h2>
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Add your movie slides here -->
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h3 class="movie-name">Movie 1</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h3 class="movie-name">Movie 2</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 3">
+                <h3 class="movie-name">Movie 3</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 4">
+                <h3 class="movie-name">Movie 4</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 5">
+                <h3 class="movie-name">Movie 5</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 6">
+                <h3 class="movie-name">Movie 6</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 7">
+                <h3 class="movie-name">Movie 7</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 8">
+                <h3 class="movie-name">Movie 8</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 9">
+                <h3 class="movie-name">Movie 9</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 10">
+                <h3 class="movie-name">Movie 10</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 11">
+                <h3 class="movie-name">Movie 11</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 12">
+                <h3 class="movie-name">Movie 12</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 13">
+                <h3 class="movie-name">Movie 13</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 14">
+                <h3 class="movie-name">Movie 14</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 15">
+                <h3 class="movie-name">Movie 15</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 16">
+                <h3 class="movie-name">Movie 16</h3>
+            </div>
+            <!-- Add more movie slides as needed -->
+        </div>
+    </div>
+    <h2>Romantic Movies</h2>
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Add your movie slides here -->
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h3 class="movie-name">Movie 1</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h3 class="movie-name">Movie 2</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 3">
+                <h3 class="movie-name">Movie 3</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 4">
+                <h3 class="movie-name">Movie 4</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 5">
+                <h3 class="movie-name">Movie 5</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 6">
+                <h3 class="movie-name">Movie 6</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 7">
+                <h3 class="movie-name">Movie 7</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 8">
+                <h3 class="movie-name">Movie 8</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 9">
+                <h3 class="movie-name">Movie 9</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 10">
+                <h3 class="movie-name">Movie 10</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 11">
+                <h3 class="movie-name">Movie 11</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 12">
+                <h3 class="movie-name">Movie 12</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 13">
+                <h3 class="movie-name">Movie 13</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 14">
+                <h3 class="movie-name">Movie 14</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 15">
+                <h3 class="movie-name">Movie 15</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 16">
+                <h3 class="movie-name">Movie 16</h3>
+            </div>
+            <!-- Add more movie slides as needed -->
+        </div>
+    </div>
+    <h2>Asian Drama</h2>
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Add your movie slides here -->
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 1">
+                <h3 class="movie-name">Movie 1</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 2">
+                <h3 class="movie-name">Movie 2</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 3">
+                <h3 class="movie-name">Movie 3</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 4">
+                <h3 class="movie-name">Movie 4</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 5">
+                <h3 class="movie-name">Movie 5</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 6">
+                <h3 class="movie-name">Movie 6</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 7">
+                <h3 class="movie-name">Movie 7</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 8">
+                <h3 class="movie-name">Movie 8</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie1.jpg" alt="Movie 9">
+                <h3 class="movie-name">Movie 9</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie2.jpg" alt="Movie 10">
+                <h3 class="movie-name">Movie 10</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie3.jpg" alt="Movie 11">
+                <h3 class="movie-name">Movie 11</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie4.jpg" alt="Movie 12">
+                <h3 class="movie-name">Movie 12</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie5.jpg" alt="Movie 13">
+                <h3 class="movie-name">Movie 13</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie6.jpg" alt="Movie 14">
+                <h3 class="movie-name">Movie 14</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie7.jpg" alt="Movie 15">
+                <h3 class="movie-name">Movie 15</h3>
+            </div>
+            <div class="swiper-slide">
+                <img src="movie8.jpg" alt="Movie 16">
+                <h3 class="movie-name">Movie 16</h3>
+            </div>
+            <!-- Add more movie slides as needed -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 <span><a href="index.html">Netflix</a></span>. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+</html>
